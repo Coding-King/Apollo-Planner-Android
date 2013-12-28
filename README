@@ -1,0 +1,33 @@
+Apollo Planner: Android Edition
+By Elijah Carbonaro
+
+***************LEFT TO DO****************
+Backround checking
+Load more
+File download system
+*****************************************
+
+2013.12.6
++ Began building, have basic structure
+- XML parser, all the menus, background alerts, error in XML doc
+
+2013.12.7
++ Updated splash screen design
++ Finished XML parser
++ Added display with custom adapter
++ Smooth new animations and themes
++ View class/feed
++ Settings
+- Better download system
+- Load more
+- Background update
+
+2013.12.8
++ Finished side options menu
++ Fixed view all classes and all feeds
++ Added server contact checking
+
+2013.12.23
++ Finished background updates
+- Working on downloads, download manager just stays intederminate loading
+- load more is on the way, i have the icon, need to change/toggle and async get the stuff.

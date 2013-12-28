@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10sp" >
+
+<TextView
+    android:id="@+id/list_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="22sp"
+    android:text="Name"
+    android:layout_alignParentLeft="true" />
+
+<ImageView
+    android:id="@+id/list_web_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/update_name"
+    android:layout_alignParentRight="true"
+    android:src="@drawable/ic_action_web_site" />
+
+<TextView
+    android:id="@+id/list_teacher"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/list_name"
+    android:layout_below="@+id/list_name"
+    android:text="Teacher Name"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

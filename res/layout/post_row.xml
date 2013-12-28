@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<TextView
+    android:id="@+id/date"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/apollo_purple"
+    android:text="October 29 2013"
+    android:textColor="@android:color/white"
+    android:textSize="22sp" />
+
+<TextView
+    android:id="@+id/time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/date"
+    android:layout_alignBottom="@+id/date"
+    android:layout_alignParentRight="true"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="@android:color/white"
+    android:paddingRight="10sp"
+    android:text="7:30 pm" />
+
+<TextView
+    android:id="@+id/file"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/message"
+    android:layout_alignParentLeft="true"
+    android:text="file download"
+    android:paddingLeft="10sp"
+    android:paddingBottom="10sp"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<TextView
+    android:id="@+id/message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/date"
+    android:text="Lots of text here"
+    android:padding="10sp"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+</RelativeLayout>

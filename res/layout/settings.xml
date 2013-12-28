@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+    <PreferenceCategory android:title="Background Updates" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="backgroundUpdates"
+            android:summary="Stay up to date with your clubs. Auto-detect new posts and recieve new post notifications."
+            android:title="Allow Updates" >
+        </CheckBoxPreference>
+        
+      <ListPreference
+            android:key="updateFrequency"
+            android:entries="@array/checkFrequency"
+            android:dependency="backgroundUpdates"
+            android:defaultValue="10"
+            android:summary="Set how often to check for updates"
+            android:entryValues="@array/checkFrequencyValues"
+            android:title="Update Frequency" />
+      
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="updateSound"
+            android:dependency="backgroundUpdates"
+            android:summary="Play a notification tone when you recieve a new post"
+            android:title="Update Notification" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

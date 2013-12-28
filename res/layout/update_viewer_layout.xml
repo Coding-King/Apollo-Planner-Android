@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/update_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/update_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"
+        android:textColor="@android:color/white"
+        android:background="@color/apollo_purple"
+        android:layout_alignRight="@+id/update_name"
+        android:layout_below="@+id/update_icon"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/update_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/update_icon"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_alignTop="@+id/update_icon"
+        android:layout_toRightOf="@+id/update_icon"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/update_date"
+        android:layout_alignRight="@+id/update_date"
+        android:layout_below="@+id/update_date" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp"
+            android:paddingTop="10sp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/update_message"
+                android:layout_width="match_parent"
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
